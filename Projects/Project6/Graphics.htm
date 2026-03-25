@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Honeymoon Adventures - Graphics</title>
+
+<style type="text/css">
+	#thumbs, #image {
+		width: 700px;
+		border: solid 1px #000;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+		background: #eee;
+		padding: 5px;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image {
+		height: 400px;
+	}
+
+	.instructions {
+		font-style: italic;
+	}
+</style>
+
+<script type="text/javascript">
+
+	// Preload print button and logo rollover images
+	PrintButton1 = new Image;
+	PrintButton2 = new Image;
+	logo1 = new Image;
+	logo2 = new Image;
+	if (document.images) {
+		PrintButton1.src = "Images/Print1.jpg";
+		PrintButton2.src = "Images/Print2.jpg";
+		logo1.src = "Images/Logo1.jpg";
+		logo2.src = "Images/Logo2.jpg";
+	}
+
+	// Image swap arrays
+	var imgArray = new Array(
+		'Image1Lg.jpg',
+		'Image2Lg.jpg',
+		'Image3Lg.jpg',
+		'Image4Lg.jpg'
+	);
+
+	var titleArray = new Array(
+		'Couple Sailing',
+		'Couple Hiking',
+		'Couple Biking',
+		'Couple Evening'
+	);
+
+	var imgPath = "Images/fullsize/";
+
+	function swapImage(imgID) {
+		var theImage = document.getElementById('theImage');
+		var textDiv = document.getElementById('bottomText');
+
+		var newImg;
+		var textTitle;
+
+		newImg = imgArray[imgID];
+		theImage.src = imgPath + newImg;
+
+		textTitle = titleArray[imgID];
+		textDiv.innerHTML = textTitle;
+	}
+
+	function preloadImages() {
+		for (var i = 0; i < imgArray.length; i++) {
+			var tmpImg = new Image;
+			tmpImg.src = imgPath + imgArray[i];
+		}
+	}
+
+</script>
+
+</head>
+<body onload="preloadImages()">
+
+<div align="center">
+
+<!-- Print Button Rollover -->
+<div>
+	<a href="" onmouseover="document.getElementById('print').src='Images/Print2.jpg';"
+	onmouseout="document.getElementById('print').src='Images/Print1.jpg';">
+	<img src="Images/Print1.jpg" alt="Print Page" width="200" height="50" id="print" style="border:none;" />
+	</a>
+</div>
+
+<br />
+
+<!-- Logo Rollover -->
+<div>
+	<a href="" onmouseover="document.getElementById('logo').src='Images/Logo2.jpg';"
+	onmouseout="document.getElementById('logo').src='Images/Logo1.jpg';">
+	<img src="Images/Logo1.jpg" alt="Honeymoon Adventures Logo" id="logo" style="border:none;" />
+	</a>
+</div>
+
+<br />
+<br />
+
+<!-- Thumbnail Image Swap -->
+<div id="thumbs">
+	<p class="instructions">Hover over a thumbnail to see the full size image below.</p>
+	<img src="Images/thumbnails/Image1Sm.jpg" alt="Couple Sailing" onmouseover="swapImage(0);" />
+	<img src="Images/thumbnails/Image2Sm.jpg" alt="Couple Hiking" onmouseover="swapImage(1);" />
+	<img src="Images/thumbnails/Image3Sm.jpg" alt="Couple Biking" onmouseover="swapImage(2);" />
+	<img src="Images/thumbnails/Image4Sm.jpg" alt="Couple Evening" onmouseover="swapImage(3);" />
+</div>
+
+<div id="image">
+	<img id="theImage" src="Images/fullsize/Image1Lg.jpg" alt="Couple Sailing" />
+	<h3 id="bottomText">Couple Sailing</h3>
+</div>
+
+<br />
+<br />
+
+<!-- Two-Column Background Image for Project 7 -->
+<img src="Images/2colback.jpg" alt="Two Column Background" />
+
+<br />
+<br />
+
+</div>
+
+<p>
+    <a href="../../index.html">Back to Home</a>
+</p>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+</p>
+
+</body>
+</html>
