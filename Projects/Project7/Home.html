@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home - Extreme Honeymoons</title>
+<link rel="stylesheet" href="mystyles.css">
+<script type="text/javascript" src="myscripts.js"></script>
+</head>
+<body onload="preloadImages()">
+
+<div id="container">
+
+<!-- ===== HEADER ===== -->
+<header>
+
+	<!-- Logo with rollover -->
+	<a href="Home.html" onmouseover="document.getElementById('logo').src='Images/Logo2.jpg';"
+	onmouseout="document.getElementById('logo').src='Images/Logo1.jpg';">
+	<img src="Images/Logo1.jpg" alt="Extreme Honeymoons Logo" id="logo" class="logo" />
+	</a>
+
+	<!-- Banner image -->
+	<img src="Images/banner.jpg" alt="Extreme Honeymoons Banner" class="banner" width="500" height="160" />
+
+	<!-- Navigation bar - 30% float right -->
+	<nav>
+		<a href="Home.html">Home</a>
+		<a href="AboutUs.html">About Us</a>
+		<a href="Tributes.html">Tributes</a>
+		<a href="Survey.html">Survey</a>
+		<a href="Favorites.html">Favorites</a>
+	</nav>
+
+</header>
+
+<!-- ===== SECTION with background image ===== -->
+<section>
+
+	<!-- ===== ARTICLE ===== -->
+	<article>
+
+		<h1>Welcome to Extreme Honeymoons!</h1>
+
+		<p>If you are just getting hitched, we can help make your honeymoon outrageous.
+		Take a look at our Excursions and take the opportunity to complete our survey.</p>
+
+		<hr />
+
+		<!-- Thumbnail Image Swap -->
+		<h2>Our Honeymoon Excursions Gallery</h2>
+
+		<div id="thumbs">
+			<p class="instructions">Hover over a thumbnail to see the full size image below.</p>
+			<img src="Images/thumbnails/Image1Sm.jpg" alt="Couple Sailing" onmouseover="swapImage(0);" />
+			<img src="Images/thumbnails/Image2Sm.jpg" alt="Couple Hiking" onmouseover="swapImage(1);" />
+			<img src="Images/thumbnails/Image3Sm.jpg" alt="Couple Biking" onmouseover="swapImage(2);" />
+			<img src="Images/thumbnails/Image4Sm.jpg" alt="Couple Evening" onmouseover="swapImage(3);" />
+		</div>
+
+		<div id="image">
+			<img id="theImage" src="Images/fullsize/Image1Lg.jpg" alt="Couple Sailing" />
+			<h3 id="bottomText">Couple Sailing</h3>
+		</div>
+
+		<hr />
+
+		<!-- Mini Tribute -->
+		<h2>Customer Tribute: Heliskiing on Kings Peak</h2>
+
+		<div class="mini-tribute">
+			<img src="Images/HeliSkiingSm.jpg" alt="Heliskiing adventure" width="250" height="166" />
+			<h3>David and Mary Farnsworth</h3>
+			<p>We just wanted to thank you folks at Extreme Honeymoons for a rip-roaring time
+			during our honeymoon trip. I had always wanted to try heliskiing, and my honeymoon
+			seemed as good a time to go for it. Both my wife Mary and I are experienced downhill
+			skiers, but we had never tried extreme skiing or snowboarding before.</p>
+			<p><a href="Tributes.html">more &gt;&gt;</a></p>
+		</div>
+
+	</article>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+	<p><a href="mailto:gurrb@student.edu">Webmaster: Bryan Gurr</a></p>
+	<p>This web site has been created solely for educational purposes.</p>
+</footer>
+
+</div>
+
+</body>
+</html>
