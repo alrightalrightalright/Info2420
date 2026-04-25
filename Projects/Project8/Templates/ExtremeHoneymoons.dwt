@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Extreme Honeymoons</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../mystyles.css">
+<link rel="stylesheet" href="../print.css" media="print">
+<script type="text/javascript" src="../myscripts.js"></script>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+<body onload="preloadImages()">
+
+<div id="container">
+
+	<!-- ===== HEADER ===== -->
+	<header>
+
+		<!-- Logo with rollover -->
+		<a href="../Home.html" onmouseover="document.getElementById('logo').src='../Images/Logo2.jpg';"
+		onmouseout="document.getElementById('logo').src='../Images/Logo1.jpg';">
+		<img src="../Images/Logo1.jpg" alt="Extreme Honeymoons Logo" id="logo" class="logo" />
+		</a>
+
+		<!-- Banner image -->
+		<img src="../Images/banner.jpg" alt="Extreme Honeymoons Banner" class="banner" width="500" height="160" />
+
+		<!-- Navigation bar -->
+		<nav>
+			<a href="../Home.html">Home</a>
+			<a href="../AboutUs.html">About Us</a>
+			<a href="../Tributes.html">Tributes</a>
+			<a href="../Survey.html">Survey</a>
+			<a href="../Links.html">Favorites</a>
+		</nav>
+
+	</header>
+
+	<!-- ===== SECTION with background image ===== -->
+	<section>
+
+		<!-- ===== ARTICLE ===== -->
+		<article>
+		<!-- TemplateBeginEditable name="PageContent" -->
+			<h1>Welcome to Extreme Honeymoons!</h1>
+			<p>Page content goes here.</p>
+		<!-- TemplateEndEditable -->
+		</article>
+
+	</section>
+
+	<!-- ===== FOOTER ===== -->
+	<footer>
+		<p><a href="mailto:10940705@uvu.edu">Webmaster: Bryan Gurr</a></p>
+		<p>This web site has been created solely for educational purposes.</p>
+		<p><a href="../index.html">Back to Home</a></p>
+	</footer>
+
+</div>
+
+</body>
+</html>

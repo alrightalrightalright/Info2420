@@ -1,0 +1,119 @@
+/* print.css - Printer-friendly styles for Extreme Honeymoons */
+
+/* Body: white background, black text, serif font */
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings all black for print */
+h1, h2, h3 {
+    color: #000000;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* Links black, no underline flashing */
+a:link, a:visited, a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 1px solid #000000;
+}
+
+/* Container, header, and section all 100% */
+#container {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+    height: auto;
+}
+
+section {
+    width: 100%;
+    background-image: none;
+    background-color: #FFFFFF;
+}
+
+/* Hide navigation so it is NOT printed */
+nav {
+    display: none;
+}
+
+/* Article - 95% width so it has some margin on edges */
+article {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+article p {
+    text-align: left;
+}
+
+/* Remove right column floating (mini-tribute image) */
+.mini-tribute img,
+.img-right,
+.img-left {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+}
+
+/* Hide footer from print */
+footer {
+    display: none;
+}
+
+/* Hide the print button itself when printing */
+.print-button,
+#printButton {
+    display: none;
+}
+
+/* Table simple styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+caption {
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: left;
+    font-size: 1.4em;
+    padding: 6px 0;
+}

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* ===== Styles from AboutUs.html and Tributes.html ===== */
+
+/* Body Styles */
+body {
+    background-color: #1A5276;
+    color: #2C3E50;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Styles */
+h1 {
+    color: #1A5276;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #2980B9;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: #196F3D;
+    font-size: 1.2em;
+}
+
+/* Paragraph and List Styles */
+p {
+    line-height: 1.6;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+/* Link Pseudo-classes */
+a:link {
+    color: #E67E22;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #D35400;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #C0392B;
+    text-decoration: none;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 1px solid #2980B9;
+}
+
+/* Image Classes */
+.img-left {
+    float: left;
+    padding: 0 15px 10px 0;
+}
+
+.img-right {
+    float: right;
+    padding: 0 0 10px 15px;
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    font-family: 'Lobster', cursive;
+    font-size: 1.8em;
+    color: #1A5276;
+    padding: 10px;
+    background-color: #D6EAF8;
+    border-radius: 10px;
+    text-align: left;
+    caption-side: top;
+    margin-bottom: 8px;
+}
+
+th {
+    background-color: #1A5276;
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+td {
+    background-color: #EBF5FB;
+    color: #2C3E50;
+    border-bottom: 1px solid #85C1E9;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* ===== Layout Styles for Home Page ===== */
+
+/* Centered Container */
+#container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #FDF6E3;
+}
+
+/* Header Box */
+header {
+    width: 900px;
+    height: 170px;
+    background-color: #1A5276;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+header img.logo {
+    float: left;
+    margin: 5px 10px;
+    border: none;
+}
+
+header img.banner {
+    float: left;
+    margin: 5px 0;
+    border: none;
+}
+
+/* Nav Box - inside header, 30% width, float right */
+nav {
+    width: 30%;
+    float: right;
+    text-align: center;
+    padding-top: 15px;
+}
+
+nav a:link, nav a:visited {
+    display: block;
+    background-color: #2980B9;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 3px 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #E67E22;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Section Box */
+section {
+    width: 900px;
+    background-image: url('Images/2colback.jpg');
+    background-repeat: repeat-y;
+}
+
+/* Article Box */
+article {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+article p {
+    text-align: left;
+}
+
+/* Thumbnail and Image Swap Styles from Project 6 */
+#thumbs, #image {
+    width: 700px;
+    border: solid 1px #000;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: #000;
+    background: #eee;
+    padding: 5px;
+}
+
+#thumbs {
+    margin-top: 10px;
+}
+
+#thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+}
+
+#image {
+    height: 400px;
+}
+
+.instructions {
+    font-style: italic;
+}
+
+/* Mini Tribute */
+.mini-tribute {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.mini-tribute img {
+    float: right;
+    margin: 0 0 10px 15px;
+}
+
+/* Footer Box */
+footer {
+    width: 900px;
+    height: 80px;
+    background-color: #1A5276;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a:link, footer a:visited {
+    color: #E67E22;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #FFFFFF;
+}
+
+/* ===== Splash Page (index.html) Styles ===== */
+.splash-heading {
+    color: #1A5276;
+    text-align: center;
+    font-size: 2.2em;
+    margin: 20px 0 5px 0;
+}
+
+.splash-tagline {
+    text-align: center;
+    font-style: italic;
+    color: #2C3E50;
+    margin: 0 0 20px 0;
+}
+
+.imagemap-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.imagemap-container img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
